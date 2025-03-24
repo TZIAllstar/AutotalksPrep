@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout the code from Git
-                git 'https://github.com/TZIAllstar/AutotalksPrep'
+                git branch: 'main', url: 'https://github.com/TZIAllstar/AutotalksPrep.git', credentialsId: 'your-credential-id'
             }
         }
 
